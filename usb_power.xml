@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/adprice/workspace/usb_power/usb_power.sch</source>
+    <date>Tue 20 Mar 2018 05:15:59 PM EDT</date>
+    <tool>Eeschema 4.0.2-1.fc23-product</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>usb_power.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="P2">
+      <value>USB_A</value>
+      <footprint>Connect:USB_A</footprint>
+      <libsource lib="conn" part="USB_A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB068F7</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>USB_A</value>
+      <footprint>Connect:USB_A</footprint>
+      <libsource lib="conn" part="USB_A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB06987</tstamp>
+    </comp>
+    <comp ref="P5">
+      <value>USB_B</value>
+      <footprint>Connect:USB_B</footprint>
+      <libsource lib="conn" part="USB_B"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB06A42</tstamp>
+    </comp>
+    <comp ref="P1">
+      <value>USB_B</value>
+      <footprint>Connect:USB_B</footprint>
+      <libsource lib="conn" part="USB_B"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB06B31</tstamp>
+    </comp>
+    <comp ref="P3">
+      <value>USB_B</value>
+      <footprint>Connect:USB_B</footprint>
+      <libsource lib="conn" part="USB_B"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AB06B56</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="conn" part="USB_A">
+      <description>A connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_A</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_in"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_B">
+      <description>B connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">USB_B</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="power_out"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="shield" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(P3-Pad3)">
+      <node ref="P3" pin="3"/>
+      <node ref="P4" pin="3"/>
+    </net>
+    <net code="2" name="Net-(P1-Pad3)">
+      <node ref="P1" pin="3"/>
+      <node ref="P2" pin="3"/>
+    </net>
+    <net code="3" name="Net-(P3-Pad2)">
+      <node ref="P4" pin="2"/>
+      <node ref="P3" pin="2"/>
+    </net>
+    <net code="4" name="Net-(P1-Pad5)">
+      <node ref="P2" pin="5"/>
+      <node ref="P1" pin="5"/>
+    </net>
+    <net code="5" name="Net-(P3-Pad5)">
+      <node ref="P4" pin="5"/>
+      <node ref="P3" pin="5"/>
+    </net>
+    <net code="6" name="Net-(P1-Pad4)">
+      <node ref="P4" pin="4"/>
+      <node ref="P2" pin="4"/>
+      <node ref="P5" pin="4"/>
+      <node ref="P3" pin="4"/>
+      <node ref="P1" pin="4"/>
+    </net>
+    <net code="7" name="Net-(P1-Pad2)">
+      <node ref="P1" pin="2"/>
+      <node ref="P2" pin="2"/>
+    </net>
+    <net code="8" name="Net-(P5-Pad2)">
+      <node ref="P5" pin="2"/>
+    </net>
+    <net code="9" name="Net-(P5-Pad3)">
+      <node ref="P5" pin="3"/>
+    </net>
+    <net code="10" name="Net-(P5-Pad5)">
+      <node ref="P5" pin="5"/>
+    </net>
+    <net code="11" name="Net-(P1-Pad1)">
+      <node ref="P3" pin="1"/>
+      <node ref="P4" pin="1"/>
+      <node ref="P1" pin="1"/>
+      <node ref="P2" pin="1"/>
+      <node ref="P5" pin="1"/>
+    </net>
+  </nets>
+</export>
